@@ -21,6 +21,7 @@
         </style>
     </head>
     <body class="antialiased">
+
         <div class="relative flex items-top justify-center min-h-screen bg-gray-100 dark:bg-gray-900 sm:items-center py-4 sm:pt-0">
             @if (Route::has('login'))
                 <div class="hidden fixed top-0 right-0 px-6 py-4 sm:block">
@@ -45,6 +46,11 @@
                     </svg>
                 </div>
 
+                <nav class="nav">
+                    <a class="nav-link home" href="{{route('home.index')}}">首頁</a>
+                    <a class="nav-link about" href="{{route('about.index')}}">關於本站</a>
+                    <a class="nav-link news" href="{{route('news.index')}}">最新消息</a>
+                </nav>
                 <div class="mt-8 bg-white dark:bg-gray-800 overflow-hidden shadow sm:rounded-lg">
                     <div class="grid grid-cols-1 md:grid-cols-2">
                         <div class="p-6">
